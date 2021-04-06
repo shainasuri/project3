@@ -58,7 +58,7 @@ a {
     display: grid;
     height: 87vh;
     grid-template-columns: 100%;
-    grid-template-rows: 70% 30%;
+    grid-template-rows: 75% 25%;
     grid-gap: 1.5rem;
     margin-top: 7vh;
 }
@@ -73,19 +73,30 @@ a {
 }
 .art-container {
     height: 20vh;
-    margin: 2rem;
-    width: 20vh;
-    min-width: 20vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .artwork {
     border: 0.2rem solid #DBBE9E;
-    height: 20vh;
-    margin: 2rem;
-    width: 20vh;
-    min-width: 20vh;
+    height: 25vh;
+    width: 25vh;
+    min-width: 25vh;
+}
+
+.description {
+    background-color: #2F1A00;
+    border: 0.2rem solid #927656;
+    color: #927656; 
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+}
+
+p {
+    margin: 0;
+    text-align: center;
 }
 
 .gallery-floor {

@@ -7,6 +7,8 @@ var Airtable = require("airtable");
 // use Airtable library, connect to the base using API key
 var base = new Airtable({ apiKey: "keyXBnZCAeWTlNBhM" }).base("appx84w4NobmIjOH6");
 
+// const pokelist = document.getElementById('pokemon-list');
+
 // get our collection base, select all the records 
 // specify functions that will receive the data 
 base("apples").select({maxRecords:100}).eachPage(gotPageOfApples, gotAllApples);
@@ -53,15 +55,6 @@ function showApples() {
     apples.forEach((apple) => {
 
 
-        // var artistName = document.createElement("h1");
-        // artistName.innerText = apple.fields.artist;
-        // document.body.append(artistName);
-
-        // var timePeriod = document.createElement("h3");
-        // timePeriod.innerText = apple.fields.time;
-        // document.body.append(timePeriod);
-
-
         // creating a new div container
         var artContainer = document.createElement("li");
         artContainer.classList.add("art-container");
@@ -72,13 +65,38 @@ function showApples() {
         var artworkImage = document.createElement("img");
         artworkImage.classList.add("artwork");
         artworkImage.src = apple.fields.artwork[0].url;
-        artContainer.append(artworkImage);
+
+        var artDescription = document.createElement("div");
+        artDescription.classList.add("description");
+
+        var artistName = document.createElement("p");
+        var artworkTitle = document.createElement("p");
+        var timePeriod = document.createElement("p");
+
+        artistName.innerText = apple.fields.artist;
+        artworkTitle.innerText = apple.fields.title;
+        timePeriod.innerText = apple.fields.time;
+
+        artContainer.append(artworkImage, artDescription);
+        artDescription.append(artistName, artworkTitle, timePeriod);
+
+        // var artistName = document.createElement("h1");
+        // artistName.innerText = apple.fields.artist;
+        // document.querySelector(".glide__slides").append(artistName);
+
 
     });
 }
 
 // glide 
-var glide = new Glide('.glide').mount();
 
-// var type = glide.type;
+// const config = {
+//     type: 'carousel',
+//     perView: 7,
+// }
+// new Glide('.glide', config).mount();
+
+new Glide('.glide').mount();
+
+
 
