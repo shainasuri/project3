@@ -4,16 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <script type="text/javascript" src="main.js" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/gwv7uck.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/glide.core.min.css">
+    <link rel="stylesheet" href="./css/glide.theme.min.css">
+    <script src="glide.min.js" defer> </script> 
     <script type="text/javascript" src="airtable.browser.js" defer></script>
-
-    <title>Project 3</title>
+    <script type="text/javascript" src="main.js" defer></script>
+    
+    <title>Apples in Art</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Apples in Art</h1>
+    <div class="navbar">
+        <div><a href="home.html">home</a></div>
+        <div class="header">APPLES IN ART</div>
+        <div><a href="game.html">play</a></div>
     </div>
+
+    <div class="container">
+        <div class="gallery-wall glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+
+                </ul>
+            </div>
+            
+            <div class="glide__arrows" data-glide-el="controls">
+                <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+                <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+            </div>
+        </div>
+
+        <div class="gallery-floor"></div>
+    </div>
+
+    <div class="footerend">
+        <div class="footer">© Copyright Shaina Suri 2021</div>
+    </div>
+
+    <!-- <script>
+        // new Glide('.glide', {
+        //     type: 'carousel', 
+        //     startAt: 1, 
+        //     perView: 7
+        // }).mount();
+
+        // new Glide('.glide').mount();
+    </script> -->
 </body>
 </html>

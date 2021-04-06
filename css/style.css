@@ -1,0 +1,93 @@
+* {box-sizing: border-box;}
+
+html {
+    background-color: #4C160B;
+}
+
+body {
+    font-family: mrs-eaves-roman-petite-caps,sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #DBBE9E;
+}
+/* -------------------NAVBAR & FOOTER------------------- */
+.navbar {
+    background-color: #743426;
+    border: 0.15rem solid #DBBE9E;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: space-between;
+    left: 0%;
+    position: fixed;
+    overflow: hidden;
+    top: 0%;
+    width: 100vw;
+    padding: 2vh;
+    margin: 0; 
+} 
+
+.header, .footer {
+    color: #DBBE9E;
+    display: inline;
+    font-size: 2vh;
+    text-align: center;
+}
+
+.footerend {
+    background-color: #743426;
+    border: 0.15rem solid #DBBE9E;
+    border-top: 0.15rem solid #DBBE9E;
+    bottom: 0%;
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    left: 0%;
+    overflow: hidden;
+    position: fixed;
+    min-width: 0;
+    padding: 2vh;
+    margin: 0;  
+    width: 100vw;
+}
+
+/* ----------------- BACKGROUND ----------------- */
+.container {
+    background-color: #3F0C02;
+    display: grid;
+    height: 87vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 70% 30%;
+    grid-gap: 1.5rem;
+    margin-top: 7vh;
+}
+
+.gallery-wall {
+    background-color: #4C160B;
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.art-container {
+    height: 20vh;
+    margin: 2rem;
+    width: 20vh;
+    min-width: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.artwork {
+    border: 0.2rem solid #DBBE9E;
+    height: 20vh;
+    margin: 2rem;
+    width: 20vh;
+    min-width: 20vh;
+}
+
+.gallery-floor {
+    background-color: #462318;
+}
