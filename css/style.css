@@ -54,7 +54,7 @@ a {
 
 /* ----------------- BACKGROUND ----------------- */
 .container {
-    background-color: #3F0C02;
+    background-color: #4C160B;
     display: grid;
     height: 87vh;
     grid-template-columns: 100%;
@@ -63,30 +63,97 @@ a {
     margin-top: 7vh;
 }
 
-.gallery-wall {
+.glide__arrow {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #927656;
+    position: relative;
+  
+
+    padding: 1rem 2rem;
+    z-index: 2;
+   
+}
+
+.glide__track {
+    margin-top: 20vh;
+}
+
+.glide__arrows {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    align-items: center;
+}
+
+/* .gallery-wall {
     background-color: #4C160B;
     display: inline-flex;
     flex-shrink: 0;
     justify-content: center;
     align-items: center;
     overflow: hidden;
+} */
+
+.main-wall {
+    background-color: #601D10;
+    border-bottom: 1.5rem solid #3F0C02;
+  
+    height: 78vh;
+    margin: auto;
+    width: 30vh;
+    z-index: 1;
+
+    display: inline-flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
+
 .art-container {
-    height: 20vh;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    height: 18vh;
     justify-content: center;
+    width: auto;
+}
+
+.art-container-details {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    height: 18vh;
+    justify-content: center;
+    width: auto;
 }
 
 .artwork {
     border: 0.2rem solid #DBBE9E;
     height: 25vh;
-    width: 25vh;
+    width: auto;
+    min-width: 25vh;
+}
+
+.artwork-details {
+    border: 0.2rem solid #DBBE9E;
+    height: 25vh;
+    width: auto;
     min-width: 25vh;
 }
 
 .description {
+    background-color: #2F1A00;
+    border: 0.2rem solid #927656;
+    color: #927656; 
+    margin-top: 1rem;
+    padding: 0.8rem 1rem;
+}
+
+.description-details {
     background-color: #2F1A00;
     border: 0.2rem solid #927656;
     color: #927656; 
@@ -101,4 +168,7 @@ p {
 
 .gallery-floor {
     background-color: #462318;
+    border-top: 1.5rem solid #3F0C02;
 }
+
+

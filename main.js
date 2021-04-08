@@ -49,7 +49,7 @@ function consoleLogApples() {
     });
 }
 
-// loop through the data, create elements, and add to the page
+// loop through the data, create elements, and add to the page - gallery page
 function showApples() {
     console.log("showApples()");
     apples.forEach((apple) => {
@@ -84,19 +84,65 @@ function showApples() {
         // artistName.innerText = apple.fields.artist;
         // document.querySelector(".glide__slides").append(artistName);
 
+        new Glide('.glide').mount();
 
+        // const config = {
+        //     type: 'carousel',
+        // }
+        // new Glide('.glide', config).mount();
     });
 }
 
-// glide 
+// $(document).mousemove(function(e){
+//     var X = e.pageX;
+//     var Y = e.pageY;
+//     $('.focus').css('background','radial-gradient(circle at '+X+'px '+Y+'px, transparent, #000 30%)')
+// })
 
-// const config = {
-//     type: 'carousel',
-//     perView: 7,
+
+
+// // loop through the data, create elements, and add to the page - details page
+// function showApples() {
+//     console.log("showApples()");
+//     apples.forEach((apple) => {
+
+
+//         // creating a new div container
+//         var artContainerDetails = document.createElement("li");
+//         artContainer.classList.add("art-container-details");
+//         artContainer.classList.add("glide__slide");
+//         document.querySelector(".glide__slides").append(artContainer);
+//         console.log('made container');
+
+//         var artworkImage = document.createElement("img");
+//         artworkImage.classList.add("artwork-details");
+//         artworkImage.src = apple.fields.artwork[0].url;
+
+//         var artDescription = document.createElement("div");
+//         artDescription.classList.add("description-details");
+
+//         var artistName = document.createElement("p");
+//         var artworkTitle = document.createElement("p");
+//         var timePeriod = document.createElement("p");
+
+//         artistName.innerText = apple.fields.artist;
+//         artworkTitle.innerText = apple.fields.title;
+//         timePeriod.innerText = apple.fields.time;
+
+//         artContainer.append(artworkImage, artDescription);
+//         artDescription.append(artistName, artworkTitle, timePeriod);
+
+//         // var artistName = document.createElement("h1");
+//         // artistName.innerText = apple.fields.artist;
+//         // document.querySelector(".glide__slides").append(artistName);
+
+//         new Glide('.glide').mount();
+
+//         // const config = {
+//         //     type: 'carousel',
+//         // }
+//         // new Glide('.glide', config).mount();
+
+
+//     });
 // }
-// new Glide('.glide', config).mount();
-
-new Glide('.glide').mount();
-
-
-
