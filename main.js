@@ -84,12 +84,36 @@ function showApples() {
         // artistName.innerText = apple.fields.artist;
         // document.querySelector(".glide__slides").append(artistName);
 
-        new Glide('.glide').mount();
+        // new Glide('.glide').mount();
 
         // const config = {
         //     type: 'carousel',
         // }
         // new Glide('.glide', config).mount();
+
+        new Glide('.glide', {
+                // type: 'carousel', 
+                startAt: 1, 
+                perView: 7,
+                perTouch: 1,
+                gap: 100,
+
+                breakpoints: {
+                    1400: {
+                        perView: 5,
+                    },
+                    1024: {
+                        perView: 3,
+                        gap: 200,
+                    },
+                    600: {
+                        perView: 1,
+                    }
+                }
+
+            }).mount();
+            
+              
     });
 }
 
