@@ -53,6 +53,7 @@ a {
 }
 
 /* ----------------- BACKGROUND ----------------- */
+
 .container {
     background-color: #4C160B;
     display: grid;
@@ -69,6 +70,19 @@ a {
     position: absolute;
     width: 100vw;
     z-index: 2;
+}
+
+.intro-text{
+    background-color: #2F1A00;
+    border: 0.1rem solid #927656;
+    color: #927656; 
+    max-width: 40vh;
+    padding: 0.8rem 1rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
 }
 
 .glide__arrow {
@@ -92,9 +106,9 @@ a {
     align-items: center;
 }
 
-.glide__slide--active {
+/* .glide__slide--active {
    bottom: 50%;
-}
+} */
 
 /* .gallery-wall {
     background-color: #4C160B;
@@ -108,7 +122,7 @@ a {
 .main-wall {
     background-color: #601D10;
     border-bottom: 1.5rem solid #3F0C02;
-  
+
     height: 78vh;
     margin: auto;
     width: 30vh;
@@ -129,14 +143,6 @@ a {
     width: auto;
 }
 
-/* .art-container-details {
-    align-items: center;
-    display: inline-flex;
-    flex-direction: column;
-    height: 18vh;
-    justify-content: center;
-    width: auto;
-} */
 
 .artwork {
     border: 0.5rem solid #91714c;
@@ -148,12 +154,7 @@ a {
     min-width: 20vh;
 }
 
-/* .artwork-details {
-    border: 0.2rem solid #DBBE9E;
-    height: 30vh;
-    width: auto;
-    min-width: 25vh;
-} */
+
 
 .description {
     background-color: #2F1A00;
@@ -198,7 +199,14 @@ p {
 /* iPhone/Mobile Screen */
 @media screen and (max-width: 600px) {
     .glide__arrows {
-        margin: 11vh 20vw 3vh;
+        margin: 5.5vh 20vw 3vh;
         font-size: 1rem;
+    }
+    /* .glide-container  {
+        height: 75vh;
+    } */
+    .main-wall {
+        height: 77vh;
+        margin-top: 0.5vh;
     }
 }

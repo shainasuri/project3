@@ -93,10 +93,11 @@ function showApples() {
 
         new Glide('.glide', {
                 // type: 'carousel', 
-                startAt: 1, 
+                startAt: 0, 
                 perView: 7,
                 perTouch: 1,
                 gap: 100,
+                // animationDuration: 1000,
 
                 breakpoints: {
                     1400: {
