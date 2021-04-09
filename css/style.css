@@ -26,6 +26,7 @@ a {
     width: 100vw;
     padding: 2vh;
     margin: 0; 
+    z-index: 3;
 } 
 
 .header, .footer {
@@ -199,14 +200,9 @@ p {
 /* iPhone/Mobile Screen */
 @media screen and (max-width: 600px) {
     .glide__arrows {
-        margin: 5.5vh 20vw 3vh;
-        font-size: 1rem;
+       display: none;
     }
     /* .glide-container  {
         height: 75vh;
     } */
-    .main-wall {
-        height: 77vh;
-        margin-top: 0.5vh;
-    }
 }
