@@ -10,40 +10,38 @@
     <link rel="stylesheet" href="./css/glide.core.min.css">
     <script type="text/javascript" src="glide.min.js" defer> </script> 
     <script type="text/javascript" src="airtable.browser.js" defer></script>
-    <script type="text/javascript" src="main.js" defer></script>
+    <script type="text/javascript" src="home.js" defer></script>
     <!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script> -->
     
-    <title>Apples in Art: Gallery</title>
+    <title>Apples in Art: An Elastic Collection</title>
 </head>
 <body>
-    <div class="navbar">
-        <div><a href="home.html">home</a></div>
-        <div class="header">APPLES IN ART</div>
-        <div><a href="game.html">play</a></div>
+    <div class="navbar home-header">
+        <div class="header">AN ELASTIC COLLECTION</div>
     </div>
 
+    <div class="intro-container">
+        <div class="intro">
+            <div class="intro-box">
+                <div class="title">apples<br>in art</div>
+                <div class="intro-text">Apples are very significant in the world of art. Artists have used the symbol of an apple to represent knowledge, temptation, chaos, etc. There is a mix of motifs involved. This collection shows the prevalence of the apple as a symbol in art, through an interactive digital gallery experience.</div>
+            </div>
+            <div>
+                <button class="enter-gallery" onclick="document.location='gallery.html'">enter gallery</button>
+            </div>
+        </div>   
+    </div>
 
-    <div class="glide-container">
+    <div class="glide-container-home">
         <div class="glide glide--carousel">
                 <div class="glide__track" data-glide-el="track">
                     <ul class="glide__slides">
-                        <!-- <li class="art-container">
-                            <div class="intro-text">
-                                <p>
-                                    Apples are very significant in the world of art. Artists have used the symbol of an apple to represent knowledge, temptation, chaos, etc. There is a mix of motifs involved. This collection shows the prevalence of the apple as a symbol in art, through an interactive digital gallery experience.
-                                </p>
-                            </div>
-                        </li> -->
                     </ul>
-                </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">❮</button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">❯</button>
                 </div>
             </div>
     </div>
 
-    <div class="container">
+    <div class="container-home">
         <div class="main-wall"></div>
         <div class="gallery-floor"></div>
     </div>
