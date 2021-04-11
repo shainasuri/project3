@@ -26,7 +26,7 @@ a {
     width: 100vw;
     padding: 2vh;
     margin: 0; 
-    z-index: 3;
+    z-index: 4;
 } 
 
 .header, .footer {
@@ -34,6 +34,11 @@ a {
     display: inline;
     font-size: 2vh;
     text-align: center;
+}
+
+.home-header {
+    display: flex;
+    justify-content: center;
 }
 
 .footerend {
@@ -65,60 +70,7 @@ a {
     margin-top: 7vh;
 }
 
-.glide-container {
-    /* border: 10px solid blue; */
-    height: 78vh;
-    position: absolute;
-    width: 100vw;
-    z-index: 2;
-}
 
-.intro-text{
-    background-color: #2F1A00;
-    border: 0.1rem solid #927656;
-    color: #927656; 
-    max-width: 40vh;
-    padding: 0.8rem 1rem;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: auto;
-}
-
-.glide__arrow {
-    background-color: rgba(0,0,0,0);
-    border: none;
-    color: #927656;
-    position: relative;
-    padding: 1rem 2rem;
-    z-index: 2;
-   
-}
-
-.glide__track {
-    margin-top: 20vh;
-}
-
-.glide__arrows {
-    display: flex;
-    justify-content: space-between;
-    margin: 4vh 45vw 3vh;
-    align-items: center;
-}
-
-/* .glide__slide--active {
-   bottom: 50%;
-} */
-
-/* .gallery-wall {
-    background-color: #4C160B;
-    display: inline-flex;
-    flex-shrink: 0;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-} */
 
 .main-wall {
     background-color: #601D10;
@@ -136,6 +88,116 @@ a {
     overflow: hidden;
 }
 
+.gallery-floor {
+    background-color: #462318;
+    border-top: 1.5rem solid #3F0C02;
+}
+
+/* -------------------- HOMEPAGE --------------------- */
+.container-home {
+    background-color: #4C160B;
+    display: grid;
+    height: 87vh;
+    grid-template-columns: 100%;
+    grid-template-rows: 75% 25%;
+    grid-gap: 1.5rem;
+}
+.intro-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7vh;
+}
+
+.intro {
+    /* border: 1px solid blue; */
+    background-color: #601D10;
+    border-bottom: 1.5rem solid #3F0C02;
+    position: absolute;
+
+    z-index: 3;
+
+    height: 78vh;
+    
+    width: 30vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.intro-box {
+    background-color: #2F1A00;
+    border: 0.1rem solid #927656;
+    color: #927656; 
+    /* margin: 0 2rem; */
+    max-width: 25vh;
+    padding: 1.5rem 1.5rem 1.9rem;
+    margin-top: 3vh;
+}
+
+.title {
+    font-size: 4rem;
+    line-height: 2rem;
+    text-align: center;
+    padding-bottom: 1rem;;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    line-height: 1rem;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.enter-gallery {
+    background-color: #601D10;
+    border: 0.1rem solid #DBBE9E;
+    color: #DBBE9E;
+    padding: 0.5rem 1.5rem 0.7rem;
+    margin-top: 2rem;
+}
+
+.glide-container-home {
+    /* border: 10px solid blue; */
+    height: 78vh;
+    position: absolute;
+    margin-top: 2vh;
+    width: 100vw;
+    z-index: 2;
+}
+
+/* ------------------- GLIDE ----------------------- */
+
+.glide-container {
+    /* border: 10px solid blue; */
+    height: 78vh;
+    position: absolute;
+    width: 100vw;
+    z-index: 2;
+}
+
+.glide__arrow {
+    background-color: rgba(0,0,0,0);
+    border: none;
+    color: #927656;
+    position: relative;
+    padding: 1rem 2rem;
+    z-index: 2;
+}
+
+.glide__track {
+    margin-top: 20vh;
+}
+
+.glide__arrows {
+    display: flex;
+    justify-content: space-between;
+    margin: 4vh 45vw 3vh;
+    align-items: center;
+}
+
 .art-container {
     align-items: center;
     display: flex;
@@ -143,7 +205,6 @@ a {
     justify-content: center;
     width: auto;
 }
-
 
 .artwork {
     border: 0.5rem solid #91714c;
@@ -155,8 +216,6 @@ a {
     min-width: 20vh;
 }
 
-
-
 .description {
     background-color: #2F1A00;
     border: 0.1rem solid #927656;
@@ -166,25 +225,13 @@ a {
     padding: 0.8rem 1rem;
 }
 
-/* .description-details {
-    background-color: #2F1A00;
-    border: 0.2rem solid #927656;
-    color: #927656; 
-    margin-top: 1rem;
-    padding: 0.8rem 1rem;
-} */
-
 p {
     margin: 0;
     text-align: center;
 }
 
-.gallery-floor {
-    background-color: #462318;
-    border-top: 1.5rem solid #3F0C02;
-}
-
 /* -----------------------------MEDIA QUERIES------------------------------- */
+
 /* iPad Screen */
 @media screen and (max-width: 1024px) {
     .artwork {
@@ -195,6 +242,7 @@ p {
         margin: 10.5vh 35vw 3vh;
         font-size: 2rem;
     }
+
 }
 
 /* iPhone/Mobile Screen */
@@ -202,7 +250,26 @@ p {
     .glide__arrows {
        display: none;
     }
-    /* .glide-container  {
-        height: 75vh;
-    } */
+    .intro-box {
+        padding: 1rem 1rem 1.4rem
+    }
+    .title {
+        font-size: 2.8rem;
+        line-height: 1.5rem;
+        padding-bottom: 1rem;;
+    }
+    
+    .intro-text {
+        font-size: 1rem;
+        line-height: 0.8rem;
+    }
+    
+    .glide-container-home {
+        display: none;
+    }
+
+    .glide__track {
+        margin-top: 15vh;
+    }
+
 }

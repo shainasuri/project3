@@ -66,30 +66,10 @@ function showApples() {
         artworkImage.classList.add("artwork");
         artworkImage.src = apple.fields.artwork[0].url;
 
-        var artDescription = document.createElement("div");
-        artDescription.classList.add("description");
+        artContainer.append(artworkImage);
+        
 
-        var artistName = document.createElement("p");
-        var artworkTitle = document.createElement("p");
-        var timePeriod = document.createElement("p");
-
-        artistName.innerText = apple.fields.artist;
-        artworkTitle.innerText = apple.fields.title;
-        timePeriod.innerText = apple.fields.time;
-
-        artContainer.append(artworkImage, artDescription);
-        artDescription.append(artistName, artworkTitle, timePeriod);
-
-        // var artistName = document.createElement("h1");
-        // artistName.innerText = apple.fields.artist;
-        // document.querySelector(".glide__slides").append(artistName);
-
-        // new Glide('.glide').mount();
-
-        // const config = {
-        //     type: 'carousel',
-        // }
-        // new Glide('.glide', config).mount();
+       
 
         new Glide('.glide', {
                 // type: 'carousel', 
@@ -97,9 +77,7 @@ function showApples() {
                 perView: 7,
                 perTouch: 1,
                 gap: 100,
-                autoplay: 3000,
-                // animationDuration: 1000,
-
+                autoplay: 2000,
                 breakpoints: {
                     1400: {
                         perView: 5,
