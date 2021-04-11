@@ -97,7 +97,7 @@ function showApples() {
                 perView: 7,
                 perTouch: 1,
                 gap: 100,
-                autoplay: 3000,
+                autoplay: 4000,
                 // animationDuration: 1000,
 
                 breakpoints: {
