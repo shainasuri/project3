@@ -10,16 +10,17 @@
     <script src="./js/canvas_script.js" defer></script>
     <title>Canvas Prototype</title>
 </head>
-<body>
+<body onload="mobileAlert()">
     <div class="navbar">
-        <div><a href="home.html">home</a></div>
+        <div><a href="index.html">home</a></div>
         <div class="header">APPLES IN ART</div>
-        <div><a href="index.html">gallery</a></div>
+        <div><a href="gallery.html">gallery</a></div>
     </div>
 
     <div class="canvas-container">
     <div class="wrapper">
-
+        <div class="canvas-prompt">find your inner artist</div>
+        <canvas id="my-canvas" width="400" height="400"></canvas>
         <div class="toolbar">
             <a href="#" class="tool" href="#" id="open" onclick="openImage()">
                 <img src="./images/open.png">
@@ -45,14 +46,14 @@
             <a href="#" class="tool" id="polygon" onclick="changeTool('polygon')">
                 <img src="./images/polygon.png">
             </a>
+            <button class="download-button" id="img-data-div">
+                <a href="#" id="img-file" download="apple.png" onclick="saveImage()">Download Your Apple!</a>
+            </button>
         </div>
-
-        <canvas id="my-canvas" width="400" height="400"></canvas>
-
-        <button class="download-button" id="img-data-div">
-            <a href="#" id="img-file" download="apple.png">Download Your Apple!</a>
-        </button>
-
+        <div class="instructions">instructions</div>
+        <div class="canvas-instructions">
+            this is your chance to find your inner artist.<br>DRAW AN APPLE in your unique style using the tools provided.<br>once you’re done, SAVE your artwork by clicking on the download button!<br>REFRESH the page if you wish to start over.
+        </div>
     </div>
     </div>
 

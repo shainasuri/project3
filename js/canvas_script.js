@@ -1,5 +1,13 @@
 console.log("hello")
 
+
+function mobileAlert() {
+    if (document.documentElement.clientWidth < 900) {
+        console.log('alert loaded');
+        alert("This game is currently optimized for use with a mouse only. \n\nTry it out on a desktop, and check back later for the mobile update!");
+    }
+}
+
 let canvas;
 let ctx;
 let savedImageData;
@@ -276,3 +284,6 @@ function OpenImage(){
 }
 
 // reference for code taken from: https://www.youtube.com/watch?v=R5MqjOoLGtU
+
+
+

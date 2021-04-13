@@ -19,17 +19,19 @@ margin: 3vh 34vw;
 
 
 .wrapper {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .toolbar {
     background-color:#4C160B;
     display: inline-flex;
     justify-content: space-between;
-    margin-bottom: 0.5rem;
-    margin-top: 5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     width: 100%;
 
 }
@@ -50,23 +52,80 @@ margin: 3vh 34vw;
 
 #my-canvas {
     background-color: seashell;
-    border: 4px solid  #DBBE9E;
+    border: 4px solid  #aa8157;
+    margin-top: 1rem;
     width: 100%;
 }
 
 .download-button {
     background-color: rgba(0,0,0,0);
-    border: 2px solid #DBBE9E;
+    border: 1.3px solid #ac8965;
     font-family: mrs-eaves-roman-petite-caps,sans-serif;
     font-size: 1rem;
-    margin-top: 2rem;
-    padding: 1rem;
+    margin-bottom: 0.2rem;
+    padding: 0 1.5rem;
     width: auto;
+}
+
+.download-button a{
+    color: #ac8965;
 }
 
 .toolbar a img {
     height: auto;
     max-width: 100%;
+    display: inline;
+}
+
+#polygon, #open, #save, #circle {
+    display: none;
+}
+
+@keyframes color {
+    0%   {color: #927656;}
+    50%  {color: #DBBE9E;}
+    100% {color: #927656;}
+}
+
+.canvas-prompt {
+    animation: color 5s infinite;
+    background-color: #2F1A00;
+    background-image: linear-gradient(25deg, #2F1A00, #3d2a13);
+    border: 0.1rem solid #927656;
+    color: #927656; 
+    font-size: 1.2rem;
+    padding: 0.4rem 2rem 0.6rem;
+    margin-top: 8vh;
+    text-align: center;
+}
+
+.canvas-instructions {
+    background-color: #2F1A00;
+    border: 0.1rem solid #DBBE9E;
+    color: #DBBE9E; 
+    font-size: 1.3rem;
+    padding: 1.7rem 2rem 2rem;
+    margin-top: 20vw;
+    text-align: center;
+    z-index: 2;
+    position: absolute;
+    display: none;
+}
+
+.instructions {
+    background-color: #2F1A00;
+    background-image: linear-gradient(-25deg, #2F1A00, #3a2710);
+    border: 0.1rem solid #927656;
+    color: #927656; 
+    font-size: 1rem;
+    padding: 0.2rem 1rem 0.35rem;
+    margin-bottom: 7vh;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+.instructions:hover + .canvas-instructions {
+    display: block;
 }
 
 /* ----------------------media queries----------------------- */
@@ -82,11 +141,17 @@ margin: 3vh 34vw;
         margin: 6vh 15vw;
     }
     .download-button {
-        border: 1px solid #DBBE9E;
         font-size: 0.7rem;
-        margin-top: 0.6rem;
-        padding: 0.5rem;
-        width: auto;
+        padding: 0 0.5rem;
+        /* width: auto; */
+    }
+    .canvas-prompt {
+        font-size: 1.2rem;
+        padding: 0.8rem 2rem 1rem;
+    }
+
+    .instructions {
+        display: none;
     }
 }
 
