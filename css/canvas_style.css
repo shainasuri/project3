@@ -13,17 +13,18 @@ a {
 
 * {box-sizing: border-box;}
 
+/* --------------------------CANVAS--------------------------- */
+
 .canvas-container {
-margin: 3vh 34vw;
+    margin: 3vh 34vw;
 }
 
-
 .wrapper {
-    margin: auto;
-    max-width: 100%;
+    align-items: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    margin: auto;
+    max-width: 100%;
 }
 
 .toolbar {
@@ -33,7 +34,6 @@ margin: 3vh 34vw;
     margin-bottom: 1rem;
     margin-top: 1rem;
     width: 100%;
-
 }
 
 .toolbar a {
@@ -103,13 +103,13 @@ margin: 3vh 34vw;
     background-color: #2F1A00;
     border: 0.1rem solid #DBBE9E;
     color: #DBBE9E; 
+    display: none;
     font-size: 1.3rem;
-    padding: 1.7rem 2rem 2rem;
     margin-top: 20vw;
+    padding: 1.7rem 2rem 2rem;
+    position: absolute;
     text-align: center;
     z-index: 2;
-    position: absolute;
-    display: none;
 }
 
 .instructions {
@@ -118,8 +118,8 @@ margin: 3vh 34vw;
     border: 0.1rem solid #927656;
     color: #927656; 
     font-size: 1rem;
-    padding: 0.2rem 1rem 0.35rem;
     margin-bottom: 7vh;
+    padding: 0.2rem 1rem 0.35rem;
     user-select: none;
     -webkit-user-select: none;
 }
@@ -128,23 +128,26 @@ margin: 3vh 34vw;
     display: block;
 }
 
-/* ----------------------media queries----------------------- */
+/* ----------------------MEDIA QUERIES----------------------- */
+
 /* iPad Screen */
 @media screen and (max-width: 1024px) {
     .canvas-container {
         margin: 6vh 20vw;
     }
 }
+
 /* iPhone/Mobile Screen */
 @media screen and (max-width: 600px) {
     .canvas-container {
         margin: 6vh 15vw;
     }
+
     .download-button {
         font-size: 0.7rem;
         padding: 0 0.5rem;
-        /* width: auto; */
     }
+
     .canvas-prompt {
         font-size: 1.2rem;
         padding: 0.8rem 2rem 1rem;
@@ -156,6 +159,7 @@ margin: 3vh 34vw;
 }
 
 /* -------------------NAVBAR & FOOTER------------------- */
+
 .navbar {
     background-color: #743426;
     border: 0.15rem solid #DBBE9E;
@@ -163,12 +167,12 @@ margin: 3vh 34vw;
     flex: 1 1 auto;
     justify-content: space-between;
     left: 0%;
-    position: fixed;
-    overflow: hidden;
-    top: 0%;
-    width: 100vw;
-    padding: 2vh;
     margin: 0; 
+    overflow: hidden;
+    padding: 2vh;
+    position: fixed;
+    top: 0%;
+    width: 100vw; 
 } 
 
 .header, .footer {
@@ -194,3 +198,4 @@ margin: 3vh 34vw;
     margin: 0;  
     width: 100vw;
 }
+

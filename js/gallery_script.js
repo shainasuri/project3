@@ -92,28 +92,27 @@ function showApples() {
         // new Glide('.glide', config).mount();
 
         new Glide('.glide', {
-                // type: 'carousel', 
-                startAt: 0, 
-                perView: 7,
-                perTouch: 1,
-                gap: 100,
-                // autoplay: 4000,
-                // animationDuration: 1000,
+            // type: 'carousel', 
+            startAt: 0, 
+            perView: 7,
+            perTouch: 1,
+            gap: 100,
+            // autoplay: 4000,
+            // animationDuration: 1000,
 
-                breakpoints: {
-                    1400: {
-                        perView: 5,
-                    },
-                    1024: {
-                        perView: 3,
-                        gap: 200,
-                    },
-                    600: {
-                        perView: 1,
-                    }
+            breakpoints: {
+                1400: {
+                    perView: 5,
+                },
+                1024: {
+                    perView: 3,
+                    gap: 200,
+                },
+                600: {
+                    perView: 1,
                 }
-
-            }).mount();
+            }
+        }).mount();
             
               
     });

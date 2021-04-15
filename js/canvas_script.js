@@ -1,6 +1,5 @@
 console.log("hello")
 
-
 function mobileAlert() {
     if (document.documentElement.clientWidth < 900) {
         console.log('alert loaded');
@@ -284,6 +283,5 @@ function OpenImage(){
 }
 
 // reference for code taken from: https://www.youtube.com/watch?v=R5MqjOoLGtU
-
 
 

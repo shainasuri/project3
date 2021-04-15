@@ -12,7 +12,9 @@ a {
     text-decoration: none;
     color: #DBBE9E;
 }
+
 /* -------------------NAVBAR & FOOTER------------------- */
+
 .navbar {
     background-color: #743426;
     border: 0.15rem solid #DBBE9E;
@@ -20,11 +22,11 @@ a {
     flex: 1 1 auto;
     justify-content: space-between;
     left: 0%;
-    position: fixed;
     overflow: hidden;
+    padding: 2vh;
+    position: fixed;
     top: 0%;
     width: 100vw;
-    padding: 2vh;
     margin: 0; 
     z-index: 4;
 } 
@@ -50,11 +52,11 @@ a {
     flex: 1 1 auto;
     justify-content: center;
     left: 0%;
-    overflow: hidden;
-    position: fixed;
+    margin: 0; 
     min-width: 0;
+    overflow: hidden;
     padding: 2vh;
-    margin: 0;  
+    position: fixed;
     width: 100vw;
 }
 
@@ -70,22 +72,18 @@ a {
     margin-top: 7vh;
 }
 
-
-
 .main-wall {
+    align-items: center;
     background-color: #601D10;
     border-bottom: 1.5rem solid #3F0C02;
-
-    height: 78vh;
-    margin: auto;
-    width: 30vh;
-    z-index: 1;
-
     display: inline-flex;
     flex-shrink: 0;
     justify-content: center;
-    align-items: center;
+    height: 78vh;
+    margin: auto;
     overflow: hidden;
+    width: 30vh;
+    z-index: 1;
 }
 
 .gallery-floor {
@@ -94,6 +92,7 @@ a {
 }
 
 /* -------------------- HOMEPAGE --------------------- */
+
 .container-home {
     background-color: #4C160B;
     display: grid;
@@ -102,6 +101,7 @@ a {
     grid-template-rows: 75% 25%;
     grid-gap: 1.5rem;
 }
+
 .intro-container {
     display: flex;
     justify-content: center;
@@ -110,21 +110,17 @@ a {
 
 .intro {
     /* border: 1px solid blue; */
+    align-items: center;
     background-color: #601D10;
     border-bottom: 1.5rem solid #3F0C02;
-    position: absolute;
-
-    z-index: 3;
-
-    height: 78vh;
-    
-    width: 30vh;
-
     display: flex;
     flex-direction: column;
+    height: 78vh;
     justify-content: center;
-    align-items: center;
     overflow: hidden;
+    position: absolute;
+    width: 30vh;
+    z-index: 3;
 }
 
 .intro-box {
@@ -132,10 +128,9 @@ a {
     background-image: linear-gradient(25deg, #2F1A00, #473218);
     border: 0.1rem solid #927656;
     color: #927656; 
-    /* margin: 0 2rem; */
+    margin-top: 3vh;
     max-width: 25vh;
     padding: 1.5rem 1.5rem 1.9rem;
-    margin-top: 3vh;
 }
 
 .intro-box:hover {
@@ -145,8 +140,8 @@ a {
 .title {
     font-size: 4rem;
     line-height: 2rem;
+    padding-bottom: 1rem;
     text-align: center;
-    padding-bottom: 1rem;;
 }
 
 .intro-text {
@@ -160,8 +155,8 @@ a {
     background-color: #601D10;
     border: 0.1rem solid #DBBE9E;
     color: #DBBE9E;
-    padding: 0.5rem 1.5rem 0.7rem;
     margin-top: 2rem;
+    padding: 0.5rem 1.5rem 0.7rem;
 }
 
 .glide-container-home {
@@ -187,8 +182,8 @@ a {
     background-color: rgba(0,0,0,0);
     border: none;
     color: #927656;
-    position: relative;
     padding: 1rem 2rem;
+    position: relative;
     z-index: 2;
 }
 
@@ -197,10 +192,10 @@ a {
 }
 
 .glide__arrows {
+    align-items: center;
     display: flex;
     justify-content: space-between;
     margin: 4vh 45vw 3vh;
-    align-items: center;
 }
 
 .art-container {
@@ -215,10 +210,10 @@ a {
     border: 0.5rem solid #8d683e;
     box-shadow: inset 0 0 0 0.3rem #695034;
     background-clip: content-box;
-    padding: 0.3rem;
     height: 20vh;
-    width: auto;
+    padding: 0.3rem;
     min-width: 20vh;
+    width: auto;
 }
 
 .description {
@@ -244,8 +239,8 @@ p {
         max-width: 25vh;
     }
     .glide__arrows {
-        margin: 10.5vh 35vw 3vh;
         font-size: 2rem;
+        margin: 10.5vh 35vw 3vh;
     }
 
 }
